@@ -1,0 +1,2665 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:om-1="http://www.wurvoc.org/vocabularies/om-1.8/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology>
+        <imports rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines -->
+
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent -->
+
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality -->
+
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion -->
+
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting -->
+
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf -->
+
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes -->
+
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies -->
+
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#hasProductPartConfiguration -->
+
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#hasProductPartConfiguration">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationEntity"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate -->
+
+
+    <DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate"/>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/numerical_value -->
+
+
+    <DatatypeProperty rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/numerical_value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval -->
+
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/Measure -->
+
+
+    <Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ApprovalStatusParameter -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ApprovalStatusParameter">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ApprovalStatusRegion"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ApprovalStatusRegion"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#BillOfMaterialsRole -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#BillOfMaterialsRole">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#GeometricalProductPartInformationRole -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#GeometricalProductPartInformationRole">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#GeometricalProductPartInformation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#GeometricalProductPartInformation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#PhysicalProductPart -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#PhysicalProductPart">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationRealization"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartMaster"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationEntity"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartFormRole -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartFormRole">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#ProductPartForm"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#ProductPartForm"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationObject"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationObject"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartMaster -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartMaster">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationObject"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#PhysicalProductPart"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartMetainformationRole -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartMetainformationRole">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#ProductPartMetainformation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#ProductPartMetainformation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationObject"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxQualifiedCardinality>
+                <onClass rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ApprovalStatus"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxQualifiedCardinality>
+                <onClass rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxQualifiedCardinality>
+                <onClass rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+                <someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+                <allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#VersionParameter -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#VersionParameter">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+                <someValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#VersionRegion"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"/>
+                <allValuesFrom rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#VersionRegion"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry -->
+
+
+    <Class rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-11"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-22"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-37"/>
+        <DUL:hasQuality rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302023"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302226"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302326"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_306540"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4142865"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4210935"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4211098"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4583862"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4624473"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6051038"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6053077"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_615726"/>
+        <DUL:hasQuality rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-11"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_3005740"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302123"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302226"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302323"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4142865"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4210935"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211060"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211350"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211464"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4624473"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6000606"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_615726"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6170738"/>
+        <DUL:hasQuality rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-22"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_302321"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_6089577"/>
+        <DUL:hasQuality rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-26-2"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-28-1_3005740"/>
+        <DUL:hasQuality rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-28-1"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302223"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302226"/>
+        <DUL:hasQuality rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-32-1"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_3005740"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_4529064"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_6115080"/>
+        <DUL:hasQuality rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-36-3"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_302323"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_306926"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-26-2"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-28-1"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-32-1"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-36-3"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210660"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210935"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4548180"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4624473"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6000650"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141554"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141556"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_615726"/>
+        <DUL:hasQuality rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-37"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+        <DUL:hasRegion rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+        <DUL:hasRegion rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+        <DUL:hasRegion rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+        <DUL:hasRegion rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+        <DUL:hasRegion rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+        <DUL:hasRegion rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+        <DUL:hasRegion rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"/>
+        <DUL:hasRegion rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302023 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302023">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302226 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302226">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302326 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302326">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_306540 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_306540">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4142865 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4142865">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4210935 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4210935">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4211098 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4211098">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4583862 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4583862">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4624473 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4624473">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6051038 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6051038">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6053077 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6053077">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_615726 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_615726">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_3005740 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_3005740">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302123 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302123">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302226 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302226">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302323 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302323">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4142865 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4142865">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4210935 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4210935">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211060 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211060">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211350 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211350">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211464 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211464">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4624473 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4624473">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6000606 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6000606">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_615726 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_615726">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6170738 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6170738">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_302321 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_302321">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_6089577 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_6089577">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-28-1_3005740 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-28-1_3005740">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302223 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302223">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302226 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302226">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_3005740 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_3005740">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_4529064 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_4529064">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_6115080 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_6115080">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_302323 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_302323">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_306926 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_306926">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-26-2">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-28-1">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-32-1">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-36-3">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210660 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210660">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210935 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210935">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4548180 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4548180">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4624473 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4624473">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6000650 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6000650">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141554 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141554">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141556 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141556">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_615726 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_615726">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-11">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-22">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-37">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <om-1:numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</om-1:numerical_value>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-11"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-22"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-26-2"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-26-2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-28-1"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-28-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-32-1"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-32-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-36-3"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-36-3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-37"/>
+        <DUL:defines rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <DUL:isRoleOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <DUL:isRoleOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <DUL:isRoleOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <DUL:isRoleOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-26-2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <DUL:isRoleOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-28-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <DUL:isRoleOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-32-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <DUL:isRoleOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-36-3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"/>
+        <DUL:isRoleOf rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302023 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302023">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302123 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302123">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302223 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302223">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302321 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302321">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302323 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302323">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302326 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302326">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306540 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306540">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306926 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306926">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-26-2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-28-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-32-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-36-3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4142865 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4142865">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210660 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210660">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211060 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211060">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211098 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211098">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211350 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211350">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211464 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211464">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4529064 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4529064">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4548180 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4548180">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4583862 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4583862">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000606 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000606">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000650 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000650">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6051038 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6051038">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6053077 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6053077">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6089577 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6089577">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6115080 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6115080">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141554 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141554">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141556 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141556">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6170738 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6170738">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302023 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302023">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302023"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302023"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302226 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302226">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302226"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302326 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302326">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302326"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302326"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_306540 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_306540">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_306540"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306540"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4142865 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4142865">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4142865"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4142865"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4210935 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4210935">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4210935"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4211098 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4211098">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4211098"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211098"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4583862 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4583862">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4583862"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4583862"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4624473 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4624473">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4624473"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6051038 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6051038">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6051038"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6051038"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6053077 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6053077">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6053077"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6053077"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_615726 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_615726">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_615726"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_3005740 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_3005740">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_3005740"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302123 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302123">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302123"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302123"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302226 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302226">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302226"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302323 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302323">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302323"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302323"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4142865 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4142865">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4142865"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4142865"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4210935 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4210935">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4210935"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211060 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211060">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211060"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211060"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211350 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211350">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211350"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211350"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211464 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211464">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211464"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211464"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4624473 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4624473">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4624473"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6000606 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6000606">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6000606"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000606"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_615726 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_615726">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_615726"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6170738 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6170738">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6170738"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6170738"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_302321 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_302321">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_302321"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302321"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_6089577 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_6089577">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_6089577"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6089577"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-28-1_3005740 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-28-1_3005740">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-28-1_3005740"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302223 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302223">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302223"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302223"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302226 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302226">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302226"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_3005740 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_3005740">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_3005740"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_4529064 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_4529064">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_4529064"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4529064"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_6115080 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_6115080">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_6115080"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6115080"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_302323 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_302323">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_302323"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302323"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_306926 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_306926">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_306926"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306926"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-26-2"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-26-2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-28-1"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-28-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-32-1"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-32-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-36-3"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-36-3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210660 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210660">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210660"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210660"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210935 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210935">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210935"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4548180 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4548180">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4548180"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4548180"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4624473 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4624473">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4624473"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6000650 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6000650">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6000650"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000650"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141554 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141554">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141554"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141554"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141556 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141556">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141556"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141556"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_615726 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_615726">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_615726"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-11"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-22"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-37"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+        <DUL:satisfies rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+        <DUL:satisfies rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+        <DUL:satisfies rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+        <DUL:satisfies rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-26-2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+        <DUL:satisfies rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-28-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+        <DUL:satisfies rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-32-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+        <DUL:satisfies rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-36-3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"/>
+        <DUL:satisfies rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1"/>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</DUL:hasIntervalDate>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-31T00:00:00</DUL:hasIntervalDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-11">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11"/>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</DUL:hasIntervalDate>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-31T00:00:00</DUL:hasIntervalDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-22">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22"/>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</DUL:hasIntervalDate>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-31T00:00:00</DUL:hasIntervalDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-26-2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2"/>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</DUL:hasIntervalDate>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-31T00:00:00</DUL:hasIntervalDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-28-1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1"/>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</DUL:hasIntervalDate>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-31T00:00:00</DUL:hasIntervalDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-32-1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1"/>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</DUL:hasIntervalDate>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-31T00:00:00</DUL:hasIntervalDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-36-3">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3"/>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</DUL:hasIntervalDate>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-31T00:00:00</DUL:hasIntervalDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-37">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <DUL:hasSetting rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37"/>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</DUL:hasIntervalDate>
+        <DUL:hasIntervalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-31T00:00:00</DUL:hasIntervalDate>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-11 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-22 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-22">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-26-2 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-26-2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-26-2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-28-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-28-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-28-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-32-1 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-32-1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-32-1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-36-3 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-36-3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-36-3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-37 -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-37">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"/>
+        <DUL:parameterizes rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-37"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity -->
+
+
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

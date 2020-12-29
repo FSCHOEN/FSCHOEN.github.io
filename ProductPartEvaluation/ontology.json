@@ -1,0 +1,2022 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartMaster"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#ProductPartForm"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#ProductPartForm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationObject"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationObject"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ApprovalStatusRegion"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#PhysicalProductPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#ProductPartMetainformation"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#ProductPartMetainformation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationObject"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ApprovalStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ApprovalStatusRegion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#VersionRegion"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#VersionRegion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#GeometricalProductPartInformation"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#GeometricalProductPartInformation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.wurvoc.org/vocabularies/om-1.8/Measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-11"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-22"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-37"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302023"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302226"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302326"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_306540"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4142865"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4210935"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4211098"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4583862"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4624473"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6051038"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6053077"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_615726"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-11"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_3005740"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302123"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302226"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302323"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4142865"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4210935"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211060"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211350"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211464"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4624473"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6000606"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_615726"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6170738"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-22"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_302321"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_6089577"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-26-2"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-28-1_3005740"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-28-1"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302223"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302226"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-32-1"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_3005740"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_4529064"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_6115080"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-36-3"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_302323"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_306926"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-26-2"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-28-1"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-32-1"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-36-3"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210660"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210935"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4548180"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4624473"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6000650"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141554"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141556"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_615726"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-37"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Confidentiality31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#ConfidentialityParameter31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302226",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302326",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_306540",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4142865",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4210935",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4211098",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4583862",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "4.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4624473",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6051038",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6053077",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_615726",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_3005740",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302226",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "3.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302323",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4142865",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4210935",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211060",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211350",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211464",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4624473",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6000606",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_615726",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6170738",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_302321",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_6089577",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-28-1_3005740",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302223",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302226",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_3005740",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_4529064",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_6115080",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_302323",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_306926",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210660",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210935",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4548180",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "3.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4624473",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6000650",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "3.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141554",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141556",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_615726",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.wurvoc.org/vocabularies/om-1.8/Measure" ],
+  "http://www.wurvoc.org/vocabularies/om-1.8/numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-11"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-11"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-22"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-26-2"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-26-2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-28-1"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-28-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-32-1"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-32-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-36-3"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-36-3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-37"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-37"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-11"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-26-2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-28-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-32-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-36-3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPIORole31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-37"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302223",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302321",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302323",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302326",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306540",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306926",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-11"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-26-2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-28-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-32-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-36-3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#BOM31054-A-1-37"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4142865",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210660",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211060",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211098",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211350",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211464",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4529064",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4548180",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4583862",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000606",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000650",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6051038",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6053077",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6089577",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6115080",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141554",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141556",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6170738",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302023"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302023"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302226",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302226"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_302326",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_302326"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302326"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_306540",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_306540"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306540"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4142865",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4142865"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4142865"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4210935",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4210935"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4211098",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4211098"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211098"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4583862",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4583862"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4583862"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_4624473",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_4624473"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6051038",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6051038"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6051038"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_6053077",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_6053077"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6053077"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-11_615726",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-11_615726"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_3005740",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_3005740"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302123"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302123"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302226",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302226"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_302323",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_302323"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302323"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4142865",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4142865"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4142865"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4210935",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4210935"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211060",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211060"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211060"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211350",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211350"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211350"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4211464",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4211464"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4211464"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_4624473",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_4624473"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6000606",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6000606"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000606"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_615726",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_615726"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-22_6170738",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-22_6170738"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6170738"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_302321",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_302321"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302321"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-26-2_6089577",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-26-2_6089577"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6089577"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-28-1_3005740",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-28-1_3005740"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302223",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302223"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302223"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-32-1_302226",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-32-1_302226"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302226"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_3005740",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_3005740"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part3005740"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_4529064",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_4529064"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4529064"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-36-3_6115080",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-36-3_6115080"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6115080"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_302323",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_302323"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part302323"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_306926",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_306926"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part306926"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-26-2"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-26-2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-28-1"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-28-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-32-1"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-32-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_31054-A-1-36-3"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-36-3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210660",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210660"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210660"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4210935",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4210935"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4210935"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4548180",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4548180"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4548180"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_4624473",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_4624473"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part4624473"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6000650",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6000650"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6000650"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141554",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141554"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141554"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_6141556",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_6141556"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part6141556"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1-37_615726",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1-37_615726"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part615726"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-11"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-11"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-22"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PartEntry31054-A-1_31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Measure31054-A-1_31054-A-1-37"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Part31054-A-1-37"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-11"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-26-2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-28-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-32-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-36-3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#PPDescription31054-A-1-37"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-01-01T00:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-12-31T00:00:00"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-01-01T00:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-12-31T00:00:00"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-11"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-01-01T00:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-12-31T00:00:00"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-01-01T00:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-12-31T00:00:00"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-26-2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-01-01T00:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-12-31T00:00:00"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-28-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-01-01T00:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-12-31T00:00:00"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-32-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-01-01T00:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-12-31T00:00:00"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-36-3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-01-01T00:00:00"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-12-31T00:00:00"
+  } ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#Situation31054-A-1-37"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-11"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-26-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-26-2"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-28-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-28-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-32-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-32-1"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-36-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-36-3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeParameter31054-A-1-37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter" ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parameterizes" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#TimeInterval31054-A-1-37"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/BlueExpressTrain_A_1.0.owl#publicConfidentiatlity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ApprovalStatusParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#BillOfMaterialsRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#GeometricalProductPartInformationRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#LevelOfConfidentialityParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#PhysicalProductPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationRealization"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationEntity"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartFormRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"
+  }, {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartMaster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationObject"
+  }, {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartMetainformationRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartInformationObjectRole"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
+  }, {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid26"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid28"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#TimeParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#VersionParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartParameter"
+  }, {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#hasProductPartConfiguration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#ProductPartInformationEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPart.owl#ProductPartSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"
+  } ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentiality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationEntity.owl#LevelOfConfidentialityRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#BillOfMaterials",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://raw.githubusercontent.com/FSCHOEN/CO-PLM/master/Ontology_Patterns/ProductPartInformationObject.owl#PartEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
